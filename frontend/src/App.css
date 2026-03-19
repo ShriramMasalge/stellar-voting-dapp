@@ -1,0 +1,189 @@
+/* ── Paste these styles into your existing index.css or App.css ── */
+
+/* Urgency banners */
+.banner.urgent {
+  background: rgba(234, 179, 8, 0.15);
+  border: 1px solid rgba(234, 179, 8, 0.4);
+  color: #fbbf24;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+.banner.urgent.pulse {
+  animation: pulse-urgent 1.5s ease-in-out infinite;
+}
+@keyframes pulse-urgent {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.65; }
+}
+
+/* Countdown */
+.countdown-wrap {
+  margin-top: 1rem;
+  padding: 0.9rem 1rem;
+  background: rgba(255,255,255,0.04);
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+.countdown-wrap.urgent-cd {
+  border-color: rgba(234,179,8,0.35);
+  background: rgba(234,179,8,0.06);
+}
+.countdown-wrap.critical {
+  border-color: rgba(239,68,68,0.45);
+  background: rgba(239,68,68,0.07);
+}
+.countdown-label {
+  font-size: 0.78rem;
+  color: var(--text-muted, #9ca3af);
+  margin: 0 0 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.countdown-digits {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+.countdown-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 52px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+}
+.countdown-num {
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+.countdown-wrap.urgent-cd  .countdown-num { color: #fbbf24; }
+.countdown-wrap.critical   .countdown-num { color: #f87171; }
+.countdown-sub {
+  font-size: 0.62rem;
+  color: var(--text-muted, #9ca3af);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin-top: 0.2rem;
+}
+.countdown-date {
+  font-size: 0.75rem;
+  color: var(--text-muted, #9ca3af);
+  margin: 0.6rem 0 0;
+}
+
+/* Vote receipt card */
+.receipt-card {
+  margin-top: 0.85rem;
+  padding: 0.9rem 1rem;
+  border-radius: 10px;
+  background: rgba(34,197,94,0.07);
+  border: 1px solid rgba(34,197,94,0.25);
+}
+.receipt-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 0.65rem;
+  color: #4ade80;
+}
+.receipt-badge {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  background: rgba(34,197,94,0.18);
+  color: #4ade80;
+  padding: 0.15rem 0.5rem;
+  border-radius: 20px;
+  border: 1px solid rgba(34,197,94,0.3);
+}
+.receipt-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.82rem;
+  padding: 0.3rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+.receipt-row:last-of-type { border-bottom: none; }
+.receipt-label { color: var(--text-muted, #9ca3af); }
+.receipt-value { font-weight: 500; }
+.receipt-value.mono { font-family: monospace; font-size: 0.78rem; }
+.receipt-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 0.65rem;
+}
+.receipt-link {
+  font-size: 0.78rem;
+  color: #60a5fa;
+  text-decoration: none;
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+  background: rgba(96,165,250,0.1);
+  border: 1px solid rgba(96,165,250,0.2);
+  transition: background 0.15s;
+}
+.receipt-link:hover { background: rgba(96,165,250,0.2); }
+
+/* Activity feed */
+.activity-feed {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.activity-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  font-size: 0.82rem;
+}
+.activity-row:last-child { border-bottom: none; }
+.activity-left {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.activity-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #4ade80;
+  flex-shrink: 0;
+}
+.activity-wallet {
+  color: var(--text-muted, #9ca3af);
+  font-family: monospace;
+  font-size: 0.78rem;
+}
+.activity-text { color: inherit; }
+.activity-right {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+  margin-left: 0.5rem;
+}
+.activity-time {
+  font-size: 0.72rem;
+  color: var(--text-muted, #9ca3af);
+  white-space: nowrap;
+}
+.activity-link {
+  color: #60a5fa;
+  font-size: 0.82rem;
+  text-decoration: none;
+  line-height: 1;
+}
+.activity-link:hover { color: #93c5fd; }

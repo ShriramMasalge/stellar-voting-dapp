@@ -1,0 +1,4 @@
+.env
+contracts/target/
+node_modules/
+dist/
