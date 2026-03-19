@@ -6,7 +6,7 @@ A decentralized, on-chain voting application built on the **Stellar blockchain**
 Replace with your Vercel URL after deployment
 
 ## ?? Demo Video
-Replace with your recorded demo link
+https://www.loom.com/share/62498821fdeb451994da65e927c5fc8e
 
 ## ?? Screenshots
 ![App Screenshot](./screenshots/app.png)
