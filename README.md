@@ -3,25 +3,29 @@
 A decentralized, on-chain voting application built on the **Stellar blockchain** using **Soroban smart contracts**. Users connect their Freighter wallet, cast votes for candidates, and all results are recorded immutably on the Stellar Testnet.
 
 ## ?? Live Demo
-Replace with your Vercel URL after deployment
+https://stellar-voting-dapp-five.vercel.app/
 
 ## ?? Demo Video
 https://www.loom.com/share/62498821fdeb451994da65e927c5fc8e
 
 ## ?? Screenshots
-![App Screenshot](./screenshots/app.png)
-![Tests Passing](./screenshots/tests.png)
+![App Screenshot]
+<img width="555" height="475" alt="app" src="https://github.com/user-attachments/assets/28924b17-6ed4-4159-b731-ed4a8a6e29ce" />
+
+![Tests Passing]
+
+<img width="687" height="401" alt="TESTING SUCCESSFUL" src="https://github.com/user-attachments/assets/733a00b9-39ef-4d45-a284-a3fe4ca1e61e" />
 
 ## ? Features
-- Freighter Wallet Integration — connect your Stellar wallet in one click
-- On-Chain Voting — votes recorded as Soroban contract calls on Stellar Testnet
-- Live Countdown Timer — 48-hour deadline with urgency cues
-- Recent Activity Feed — see who voted and when with explorer links
-- Vote Receipt Card — transaction hash, wallet address, and explorer links
-- Analytics Panel — donut chart, voter turnout, contract info
-- Duplicate Vote Protection — contract-level enforcement
-- Admin Controls — start/end voting from the UI
-- Winner Announcement — displayed automatically when voting ends
+- Freighter Wallet Integration â€” connect your Stellar wallet in one click
+- On-Chain Voting â€” votes recorded as Soroban contract calls on Stellar Testnet
+- Live Countdown Timer â€” 48-hour deadline with urgency cues
+- Recent Activity Feed â€” see who voted and when with explorer links
+- Vote Receipt Card â€” transaction hash, wallet address, and explorer links
+- Analytics Panel â€” donut chart, voter turnout, contract info
+- Duplicate Vote Protection â€” contract-level enforcement
+- Admin Controls â€” start/end voting from the UI
+- Winner Announcement â€” displayed automatically when voting ends
 
 ## ??? Tech Stack
 - Smart Contract: Rust + Soroban SDK
@@ -54,4 +58,4 @@ Expected: 6 tests passing
 5. feat: add tests README and complete dark UI redesign
 
 ## ?? Author
-Shriram Masalge — Built for the Stellar Mini-dApp Challenge.
+Shriram Masalge â€” Built for the Stellar Mini-dApp Challenge.
