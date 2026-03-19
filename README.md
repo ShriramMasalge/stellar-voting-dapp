@@ -10,11 +10,17 @@ https://www.loom.com/share/62498821fdeb451994da65e927c5fc8e
 
 ## ?? Screenshots
 ![App Screenshot]
+
+
+
 <img width="555" height="475" alt="app" src="https://github.com/user-attachments/assets/28924b17-6ed4-4159-b731-ed4a8a6e29ce" />
+
 
 ![Tests Passing]
 
+
 <img width="687" height="401" alt="TESTING SUCCESSFUL" src="https://github.com/user-attachments/assets/733a00b9-39ef-4d45-a284-a3fe4ca1e61e" />
+
 
 ## ? Features
 - Freighter Wallet Integration — connect your Stellar wallet in one click
